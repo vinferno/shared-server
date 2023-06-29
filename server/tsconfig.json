@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["es6"],
+    "allowJs": true,
+    "outDir": "../build/server",
+    "rootDir": "src",
+    "strict": true, 
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true, 
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@shared/*": ["../shared/*"]
+    }
+  },
+  "exclude": ["client/**/*", "../shared/**"],
+  "references": [
+    {
+      "path": "../shared",
+      "prepend": false
+    }
+  ]
+}
